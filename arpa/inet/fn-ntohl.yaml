@@ -1,0 +1,13 @@
+summary: "Converts an [`inttypes/uint32_t`] from network byte order to host byte order."
+returns: "[`inttypes/uint32_t`]"
+parameters:
+  - name: "netlong"
+    type: "[`inttypes/uint32_t`]"
+    description: "A short in network byte order."
+description: |
+  Socket function calls are always made with ports and addresses in a Big-endian
+  format also known as network byte order. Because the endianess of host bytes may
+  vary depending on the host software and hardware, the ntohs function is used to ensure
+  that shorts in network byte order can have their value represented natively irrespective 
+  of the native endianess of the host.
+associated: ["arpa/inet/htons", "arpa/inet/htonl", "arpa/inet/ntohs"]

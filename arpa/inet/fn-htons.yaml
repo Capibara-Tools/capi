@@ -1,0 +1,13 @@
+summary: "Converts an [`inttypes/uint16_t`] from host byte order to network byte order."
+returns: "[`inttypes/uint16_t`]"
+parameters:
+  - name: "hostshort"
+    type: "[`inttypes/uint16_t`]"
+    description: "A short in host byte order."
+description: |
+  Socket function calls are always made with ports and addresses in a Big-endian
+  format also known as network byte order. Because the endianess of host bytes may
+  vary depending on the host software and hardware, unlike [`arpa/inet/ntohs`], the htons function is used to ensure
+  that a short being provided to the socket functions is Big-endian irrespective of the native
+  endianess of the host.
+associated: ["arpa/inet/htonl", "arpa/inet/ntohl", "arpa/inet/ntohs"]

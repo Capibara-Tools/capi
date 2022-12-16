@@ -1,0 +1,13 @@
+summary: "Converts an [`inttypes/uint32_t`] from host byte order to network byte order."
+returns: "[`inttypes/uint32_t`]"
+parameters:
+  - name: "hostlong"
+    type: "[`inttypes/uint32_t`]"
+    description: "A long in host byte order."
+description: |
+  Socket function calls are always made with ports and addresses in a Big-endian
+  format also known as network byte order. Because the endianess of host bytes may
+  vary depending on the host software and hardware, the htonl function is used to ensure
+  that a long being provided to the socket functions is Big-endian irrespective of the native
+  endianess of the host.
+associated: ["arpa/inet/htons", "arpa/inet/ntohl", "arpa/inet/ntohs"]
