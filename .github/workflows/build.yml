@@ -35,7 +35,7 @@ jobs:
         run: |
           cd ..
           mkdir keys
-          echo CAPIBARA_PROCESSOR_SSH_KEY > keys/capibara_ssh_key
+          echo "$CAPIBARA_PROCESSOR_SSH_KEY" > keys/capibara_ssh_key
           chmod 600 keys/capibara_ssh_key
           ssh-agent bash -c 'ssh-add keys/capibara_ssh_key; git clone git@github.com:Capibara-Tools/capibara-processor.git'
           cd capibara-processor
