@@ -56,7 +56,7 @@ jobs:
           chmod 600 capibara_website_ssh_key
           cd ../capibara-processor
           mkdir ~/.ssh
-          ssh-keyscan -t rsa @capibara.tools >> ~/.ssh/known_hosts
+          ssh-keyscan -t rsa capibara.tools >> ~/.ssh/known_hosts
           scp -i ../keys/capibara_website_ssh_key capibara.json capibara@capibara.tools:capibara.json
           echo "All Done"
           
