@@ -53,8 +53,8 @@ jobs:
         run: |
           cd ..
           cd keys
-          echo "$CAPIBARA_WEBSITE_SSH_KEY" > ../keys/capibara_website_ssh_key
-          chmod 600 ../keys/capibara_website_ssh_key
+          echo "$CAPIBARA_WEBSITE_SSH_KEY" > capibara_website_ssh_key
+          chmod 600 capibara_website_ssh_key
           cd ../capibara-processor
           scp capibara.json capibara@capibara.tools:capibara.json -i ../keys/capibara_website_ssh_key
           echo "All Done"
