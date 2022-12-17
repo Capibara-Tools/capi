@@ -51,11 +51,10 @@ jobs:
         env: 
           CAPIBARA_WEBSITE_SSH_KEY: ${{ secrets.CAPIBARA_TOOLS_USER_SSH_KEY }}
         run: |
-          cd ..
-          cd keys
+          cd ../keys
           echo "$CAPIBARA_WEBSITE_SSH_KEY" > capibara_website_ssh_key
           chmod 600 capibara_website_ssh_key
           cd ../capibara-processor
-          scp capibara.json capibara@capibara.tools:capibara.json -i ../keys/capibara_website_ssh_key
+          scp -i ../keys/capibara_website_ssh_key capibara.json capibara@capibara.tools:capibara.json
           echo "All Done"
           
