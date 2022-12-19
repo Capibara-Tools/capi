@@ -50,6 +50,7 @@ jobs:
         name: Publish to capibara.tools
         env: 
           CAPIBARA_WEBSITE_SSH_KEY: ${{ secrets.CAPIBARA_TOOLS_USER_SSH_KEY }}
+          CAPIBARA_DOCUMENT_REFRESH_TOKEN: ${{ secrets.CAPIBARA_DOCUMENT_REFRESH_TOKEN }}
         run: |
           cd ../keys
           echo "$CAPIBARA_WEBSITE_SSH_KEY" > capibara_website_ssh_key
@@ -58,5 +59,6 @@ jobs:
           mkdir ~/.ssh
           ssh-keyscan -t rsa capibara.tools >> ~/.ssh/known_hosts
           scp -i ../keys/capibara_website_ssh_key capibara.json capibara@capibara.tools:capibara.json
+          curl https://capibara.tools/api/v1/refresh-definitions?token=$CAPIBARA_DOCUMENT_REFRESH_TOKEN
           echo "All Done"
           
