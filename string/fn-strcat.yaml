@@ -8,7 +8,7 @@ parameters:
     type: "const char *"
     description: "A pointer to the source string. The source must not overlap the destination."
 description: |
-  Note: [`string/strncat'] is a similar function that should generally be preferred
+  Note: [`string/strncat`] is a similar function that should generally be preferred
   because it has a character limit while strcat does not. This means strcat will more
   likely be vulnerable to overflow attacks if used without care. The strcat function is
   designed to operate exclusively on strings and as such it will terminate on the null

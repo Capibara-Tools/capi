@@ -11,7 +11,7 @@ parameters:
     type: "[`string/size_t`]"
     description: "The number of characters that will be copied from the source string to the destination."
 description: |
-  Note: [`string/strcpy'] is a similar function whose usage is discouraged because
+  Note: [`string/strcpy`] is a similar function whose usage is discouraged because
   it lacks a character limit that strncpy possesses. The strncpy function is designed
   to operate exclusively on strings and as such it will terminate on the null character
   rather than on a character count exclusively. This function copies up to a given

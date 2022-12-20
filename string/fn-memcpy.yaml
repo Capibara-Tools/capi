@@ -11,7 +11,7 @@ parameters:
     type: "[`string/size_t`]"
     description: "The number of bytes which will be copied from the source to the destination."
 description: |
-  Note: [`string/memmove'] is a similar function which should be preferred in cases dealing
+  Note: [`string/memmove`] is a similar function which should be preferred in cases dealing
   with overlapping memory blocks. The memcpy function operates on memory areas which means
   it can operate on any bytes rather than just arrays of characters. The traditional use
   case assumes these areas contain strings, or more correctly arrays of chars, but they

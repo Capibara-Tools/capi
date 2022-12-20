@@ -8,7 +8,7 @@ parameters:
     type: "const char *"
     description: "A pointer to the source string. The source must not overlap the destination."
 description: |
-  Note: [`string/strncpy'] is a similar function whose usage is preferred because
+  Note: [`string/strncpy`] is a similar function whose usage is preferred because
   strcpy lacks a character limit that strncpy possesses. This means strcpy will more
   likely be vulnerable to overflow attacks if used without care. The strcpy function 
   is designed to operate exclusively on strings and as such it will terminate on the
