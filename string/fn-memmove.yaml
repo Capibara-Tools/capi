@@ -1,0 +1,21 @@
+summary: "Copies a given number of bytes from a source memory area to a destination memory area."
+returns: "void *"
+parameters:
+  - name: "dest"
+    type: "void *"
+    description: "A pointer to the destination memory block."
+  - name: "source"
+    type: "const void *"
+    description: "A pointer to the source memory block."
+  - name: "num_of_bytes"
+    type: "[`string/size_t`]"
+    description: "The number of bytes which will be copied from the source to the destination."
+description: |
+  Note: The memmove function is the preferred safer alternative to [`string/memmcpy'] when
+  used on overlapping memory blocks. However it is also slower if not dealing with overlapping blocks.
+  The function operates on memory areas which means it can operate on any bytes rather than just
+  arrays of characters. The traditional use case assumes these areas contain strings, or more
+  correctly arrays of chars, but they don't necessarily have to. It copies a given number of
+  bytes from a source memory area to a destination memory area. The function will return a 
+  pointer to the destination.
+associated: ["string/memcpy"]

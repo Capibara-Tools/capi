@@ -1,0 +1,21 @@
+summary: "Breaks a string into a series of tokens using a delimiter"
+returns: "[`string/size_t`]"
+parameters:
+  - name: "destination"
+    type: "char *"
+    description: "The pointer to the destination array. Must be large enough to contain the resulting string."
+  - name: "source"
+    type: "const char *"
+    description: "The pointer to source string. Must not overlap destination buffer."
+  - name: "max_num_of_chars"
+    type: "[`string/size_t`]"
+    description: "The maximum number of characters to transform and copy to the destination."
+description: |
+  The strxfrm function is designed to operate exclusively on strings and as
+  such it will terminate on the null character or maximum number of chars, 
+  max_num_of_chars. This function converts up to maximum_num_of_chars characters
+  into a given locale specified by the LC_COLLATE setting and writes them to the
+  destination array. The function returns the size of the transformed string up to
+  but not including the null-terminating character. NOTE: If the max_num_of_chars is 0,
+  the pointer to the buffer, destination, can be null.
+associated: []

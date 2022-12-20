@@ -1,0 +1,20 @@
+summary: "Overwrites with a specified character, a given number of bytes at the beginning of a target byte buffer."
+returns: "void *"
+parameters:
+  - name: "string"
+    type: "void *"
+    description: "A pointer to the memory block which will be overwritten."
+  - name: "character"
+    type: "int"
+    description: "The character with which the bytes will be overwritten."
+  - name: "num_of_bytes"
+    type: "[`string/size_t`]"
+    description: "The number of bytes of the target byte buffer that will be overwritten."
+description: |
+  This function operates on memory areas which means it can operate on any bytes rather 
+  than just arrays of characters. The traditional use case assumes these areas contain strings, 
+  or more correctly arrays of chars, but they don't necessarily have to. It overwrites
+  num_of_bytes bytes with a specified character, character, at the beginning of the memory
+  block pointed to by the parameter, string. The function will return the pointer to the 
+  memory block which was overwritten.
+associated: []

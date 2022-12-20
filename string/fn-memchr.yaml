@@ -1,0 +1,17 @@
+summary: "Searches for the first instance of a character in a byte buffer up to a given number of bytes."
+returns: "void *"
+parameters:
+  - name: "string"
+    type: "const void *"
+    description: "A pointer to the block of memory where the search will begin."
+  - name: "character"
+    type: "int"
+    description: "The value to be searched for as an int, the function will convert this to a char to perform a byte per byte search."
+  - name: "num_of_bytes"
+    type: "[`string/size_t`]"
+    description: "The number of bytes which will be searched for the character value."
+description: |
+  This function searches for the first instance of a specified character in the first num_of_bytes bytes found in
+  the location pointed to by the string pointer. If the function finds the specified character it will return
+  a pointer to the matching byte. If not, it will return NULL.
+associated: []

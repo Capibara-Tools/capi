@@ -1,0 +1,16 @@
+summary: "Finds the first instance of an entire substring, needle, in a larger string, haystack."
+returns: "char *"
+parameters:
+  - name: "haystack"
+    type: "const char *"
+    description: "The larger string to search in."
+  - name: "needle"
+    type: "const char *"
+    description: "The substring to find."
+description: |
+  The strstr function is designed to operate exclusively on strings and as
+  such it will terminate on the null character. This function finds the first instance
+  of the entire substring pointed to by needle in the larger string pointed to by, haystack.
+  The search does not compare null-terminating characters. The functions returns a pointer to
+  the first matched instance or NULL if the substring is not matched.
+associated: []

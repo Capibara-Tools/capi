@@ -1,0 +1,16 @@
+summary: "Returns the length of the initial segment of the string consisting solely of characters found in an array of accepted characters."
+returns: "[`string/size_t`]"
+parameters:
+  - name: "string"
+    type: "const char *"
+    description: "A pointer to the string."
+  - name: "accepted_chars"
+    type: "const char *"
+    description: "A pointer to the array of accepted characters."
+description: |
+  The strspan function is designed to operate exclusively on strings and as
+  such it will terminate on the null character. This function finds the length from
+  the beginning of the input string up to but not including the first character
+  that is not shared in common with the acceptance array. The resulting length
+  is returned.
+associated: ["string/strcspn"]

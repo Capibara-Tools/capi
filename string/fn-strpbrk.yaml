@@ -1,0 +1,16 @@
+summary: "Finds the first character in a string that is shared in common with an array of accepted characters,"
+returns: "char *"
+parameters:
+  - name: "string"
+    type: "const char *"
+    description: "A pointer to the input string."
+  - name: "accepted_chars"
+    type: "const char *"
+    description: "A pointer to the array of accepted characters."
+description: |
+  The strpbrk function is designed to operate exclusively on strings and as such
+  it will terminate on the null character. This function searches the string pointed
+  to by the parameter, string, for the first character in the input string that is
+  shared in common with the array of accepted characters, accepted_chars. If it finds
+  a match it returns a pointer to the first matched character. Otherwise it returns NULL.
+associated: []

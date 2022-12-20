@@ -1,0 +1,21 @@
+summary: "Compares a given number of characters of one string against those of another string"
+returns: "char *"
+parameters:
+  - name: "string_1"
+    type: " const char *"
+    description: "A pointer to the first string."
+  - name: "string_2"
+    type: "const char *"
+    description: "A pointer to the second string."
+  - name: "num_of_chars"
+    type: "[`string/size_t`]"
+    description: "The number of characters from both strings that will be compared."
+description: |
+  Note: [`string/strcmp'] is a similar function whose usage is discouraged because
+  it lacks a character limit that strncmp possesses. The strncmp function is designed
+  to operate exclusively on strings and as such it will terminate on the null character
+  or character count rather than a character count exclusively. This function compares
+  the first num_of_chars characters from string_1 against those from string_2. The function
+  will return an integer less than, greater than, or equal to 0 respective to the possible
+  states where string_1 is less than, greater than, or equal to string_2.
+associated: ["string/strcmp"]

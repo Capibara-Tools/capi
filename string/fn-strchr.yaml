@@ -1,0 +1,16 @@
+summary: "Searches a string for the first instance of a specified character."
+returns: "char *"
+parameters:
+  - name: "string"
+    type: "const char *"
+    description: "A pointer to the string to be searched."
+  - name: "character"
+    type: "int"
+    description: "The character for which the string will be searched."
+description: |
+  The strchr function is designed to operate exclusively on strings and as such
+  it will terminate on the null character. This function
+  searches the string pointed to by the parameter, string, for the first instance
+  of the character, character. It will return a pointer to the first instance of the 
+  specified character if there is one. If not, it will return NULL.
+associated: ["string/strrchr"]
