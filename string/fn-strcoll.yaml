@@ -1,0 +1,17 @@
+summary: "Compares one string to another string based on the sorting order of the locale specified in LC_COLLATE."
+returns: "char *"
+parameters:
+  - name: "string_1"
+    type: "const char *"
+    description: "A pointer to the first string."
+  - name: "string_2"
+    type: "const char *"
+    description: "A pointer to the second string."
+description: |
+  The strcoll function is designed to operate exclusively on strings and as such it will
+  terminate on the null character. This function compares the bytes from string_1 against
+  those from string_2. The weighting of the bytes is dependent upon the sorting order of
+  the locale specified in the LC_COLLATE setting. The function will return an integer less
+  than, greater than, or equal to 0 respective to the possible states where string_1 is less
+  than, greater than, or equal to string_2.
+associated: []

@@ -1,0 +1,17 @@
+summary: "Copies the source string to the destination string location."
+returns: "char *"
+parameters:
+  - name: "dest"
+    type: "char *"
+    description: "A pointer to the destination array. Must be large enough to contain the source string."
+  - name: "source"
+    type: "const char *"
+    description: "A pointer to the source string. The source must not overlap the destination."
+description: |
+  Note: [`string/strncpy'] is a similar function whose usage is preferred because
+  strcpy lacks a character limit that strncpy possesses. This means strcpy will more
+  likely be vulnerable to overflow attacks if used without care. The strcpy function 
+  is designed to operate exclusively on strings and as such it will terminate on the
+  null character. This function copies the characters from a non-overlapping source
+  string into the destination array. It also returns a pointer to the destination string.
+associated: ["string/strncpy"]

@@ -1,0 +1,20 @@
+summary: "Compares a given number of bytes from one byte buffer against those of another byte buffer."
+returns: "int"
+parameters:
+  - name: "string_1"
+    type: "const void *"
+    description: "A pointer to the first memory block."
+  - name: "string_2"
+    type: "const void *"
+    description: "A pointer to the second memory block."
+  - name: "num_of_bytes"
+    type: "[`string/size_t`]"
+    description: "The number of bytes from both blocks of memory that will be compared."
+description: |
+  This function operates on memory areas which means it can operate on any bytes rather 
+  than just arrays of characters. The traditional use case assumes these areas contain strings, 
+  or more correctly arrays of chars, but they don't necessarily have to. It compares a given
+  number of bytes from two memory blocks. The function will return an integer less than,
+  greater than, or equal to 0 respective to the possible states where string_1 is less than,
+  greater than, or equal to string_2.
+associated: []

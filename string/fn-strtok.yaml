@@ -1,0 +1,19 @@
+summary: "Breaks a string into a series of tokens using a delimiter"
+returns: "char *"
+parameters:
+  - name: "string"
+    type: "char *"
+    description: "The string to be tokenized."
+  - name: "delimiter"
+    type: "const char *"
+    description: "The character between tokens."
+description: |
+  The strtok function is designed to operate exclusively on strings and as
+  such it will terminate on the null character. This function splits the string
+  into multiple tokens on a delimiter. The first on a given token should pass in the
+  string to be tokenized and a delimiter. Subsequent calls to the same string need
+  only pass NULL and a delimiter. The function accomplishes this by storing the location
+  of the last input string in static memory, however it is as a result not threadsafe. The
+  function returns a pointer to one token for each call. The initial input string has
+  been exhausted when the function returns NULL.
+associated: []

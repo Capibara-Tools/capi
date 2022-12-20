@@ -1,0 +1,20 @@
+summary: "Concatenates a given number of characters from a source string onto the end of a destination string."
+returns: "char *"
+parameters:
+  - name: "dest"
+    type: "char *"
+    description: "A pointer to the destination string. Must be large enough to contain the resulting string."
+  - name: "source"
+    type: "const char *"
+    description: "A pointer to the source string. The source must not overlap the destination."
+  - name: "num_of_chars"
+    type: "[`string/size_t`]"
+    description: "The maximum number of characters from the source string that are to be appended to destination string."
+description: |
+  Note: [`string/strcat'] is a similar function whose usage is discouraged because
+  it lacks a character limit that strncat possesses. The strncat function is designed
+  to operate exclusively on strings and as such it will terminate on the null character
+  or character count rather than a character count exclusively. This function concatenates
+  the first num_of_chars characters from a non-overlapping source string onto the end of the 
+  destination string. It also returns a pointer to the destination string.
+associated: ["string/strcat"]
