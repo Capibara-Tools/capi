@@ -11,7 +11,7 @@ parameters:
     type: "[`string/size_t`]"
     description: "The maximum number of characters from the source string that are to be appended to destination string."
 description: |
-  Note: [`string/strcat'] is a similar function whose usage is discouraged because
+  Note: [`string/strcat`] is a similar function whose usage is discouraged because
   it lacks a character limit that strncat possesses. The strncat function is designed
   to operate exclusively on strings and as such it will terminate on the null character
   or character count rather than a character count exclusively. This function concatenates

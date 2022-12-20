@@ -8,7 +8,7 @@ parameters:
     type: "const char *"
     description: "A pointer to the second string."
 description: |
-  Note: [`string/strncmp'] is a similar function whose usage is generally preferred because
+  Note: [`string/strncmp`] is a similar function whose usage is generally preferred because
   strcmp lacks a character limit that strncmp possesses. The strcmp function is designed
   to operate exclusively on strings and as such it will terminate on the null character. 
   This function compares the bytes from string_1 against those from string_2. The function will 
