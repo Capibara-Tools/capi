@@ -1,4 +1,4 @@
-summary: "Breaks a string into a series of tokens using a delimiter"
+summary: "Transforms a specified number of characters from a string into an alternative locale and writes them to a destination array."
 returns: "[`string/size_t`]"
 parameters:
   - name: "destination"
