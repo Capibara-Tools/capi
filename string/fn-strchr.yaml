@@ -1,5 +1,7 @@
 summary: "Searches a string for the first instance of a specified character."
-returns: "char *"
+returns:
+  type: "char *"
+  description: "A pointer to the first instance of the specified character or NULL."
 parameters:
   - name: "string"
     type: "const char *"
@@ -14,3 +16,4 @@ description: |
   of the character, character. It will return a pointer to the first instance of the 
   specified character if there is one. If not, it will return NULL.
 associated: ["string/strrchr"]
+os_affinity: ["std"]

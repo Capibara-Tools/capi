@@ -1,5 +1,7 @@
 summary: "Converts an [`inttypes/uint16_t`] from network byte order to host byte order."
-returns: "[`inttypes/uint16_t`]"
+returns:
+  type: "[`inttypes/uint16_t`]"
+  description: "The netshort in network byte order."
 parameters:
   - name: "netshort"
     type: "[`inttypes/uint16_t`]"
@@ -11,3 +13,4 @@ description: |
   that shorts in network byte order can have their value represented natively irrespective 
   of the native endianess of the host.
 associated: ["arpa/inet/htonl", "arpa/inet/htons", "arpa/inet/ntohl"]
+os_affinity: ["unix"]

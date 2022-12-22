@@ -1,1 +1,1 @@
-os_affinity: ["unix"]
+summary: "A collection of internet related utilities."

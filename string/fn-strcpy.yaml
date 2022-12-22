@@ -1,5 +1,7 @@
 summary: "Copies the source string to the destination string location."
-returns: "char *"
+returns:
+  type: "char *"
+  description: "A pointer to the destination string."
 parameters:
   - name: "dest"
     type: "char *"
@@ -15,3 +17,4 @@ description: |
   null character. This function copies the characters from a non-overlapping source
   string into the destination array. It also returns a pointer to the destination string.
 associated: ["string/strncpy"]
+os_affinity: ["std"]

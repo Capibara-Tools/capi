@@ -1,0 +1,6 @@
+summary: "A pointer type for the enum, [`winsock2/_WSAEcomparator`], concerned with Winsock2 versioning semantics."
+type: "*[`winsock2/_WSAEcomparator`]"
+associated_ref: "winsock2/_WSAEcomparator"
+description: |
+  One of several type definitions over the [`winsock2/_WSAEcomparator`] enum.
+os_affinity: ["win"]

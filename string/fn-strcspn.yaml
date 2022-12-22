@@ -1,5 +1,7 @@
 summary: "Returns the length of the initial segment of the string consisting solely of characters not found in an array of rejected characters."
-returns: "[`string/size_t`]"
+returns:
+  type: "[`string/size_t`]"
+  description: "The resulting length."
 parameters:
   - name: "string"
     type: "const char *"
@@ -13,3 +15,4 @@ description: |
   the beginning of the input string up to but not including the first character
   that is shared in common with the rejection array. The resulting length is returned.
 associated: ["string/strspn"]
+os_affinity: ["std"]

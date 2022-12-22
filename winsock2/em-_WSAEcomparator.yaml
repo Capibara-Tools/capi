@@ -1,0 +1,12 @@
+summary: "An enumeration type used for defining the semantics of version comparison."
+variants:
+  - name: "COMP_EQUAL = 0"
+    description: Used for determining if a version is equal to a given value.
+  - name: "COMP_NOTLESS"
+    description: Used to determine if a version is not less than a given value.
+description: |
+  Used for version comparison semantics. This enum type is rarely referenced directly and
+  actually has 3 type definitions: [`winsock2/WSAECOMPARATOR`], *[`winsock2/PWSAECOMPARATOR`],
+  *[`winsock2/LPWSAECOMPARATOR`]. It's also indirectly a member of the struct, [`winsock2/_WSAVersion`]
+  by means of type definition.
+os_affinity: ["win"]

@@ -1,5 +1,7 @@
 summary: "Concatenates a source string onto the end of a destination string."
-returns: "char *"
+returns:
+  type: "char *"
+  description: "A pointer to the destination string."
 parameters:
   - name: "dest"
     type: "char *"
@@ -15,3 +17,4 @@ description: |
   character. This function concatenates a non-overlapping source string onto the end
   of the destination string. It also returns a pointer to the destination string.
 associated: ["string/strncat"]
+os_affinity: ["std"]

@@ -1,0 +1,9 @@
+summary: "An implementation defined unsigned integer type."
+type: "unsigned int"
+associated_ref: ""
+description: |
+  An implementation defined unsigned integer. That can store the maximum size of a
+  theoretically possible object of any type. Programs that use other types, such as
+  unsigned int, for array indexing may fail on, e.g. 64-bit systems when the index
+  exceeds UINT_MAX or if it relies on 32-bit modular arithmetic.
+os_affinity: ["std"]

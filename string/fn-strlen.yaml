@@ -1,5 +1,7 @@
 summary: "Returns the length of the string up to, but not including the null terminating character."
-returns: "[`string/size_t`]"
+returns:
+  type: "[`string/size_t`]"
+  description: "The size of the string up to but not including the null-terminating character."
 parameters:
   - name: "string"
     type: "const char *"
@@ -8,3 +10,4 @@ description: |
   This function is used to find the length of strings. It returns the length of the string up to,
   but not including the null terminating character.
 associated: []
+os_affinity: ["std"]

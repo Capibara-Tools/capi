@@ -1,5 +1,7 @@
 summary: "Overwrites with a specified character, a given number of bytes at the beginning of a target byte buffer."
-returns: "void *"
+returns:
+  type: "void *"
+  description: "A pointer to the overwritten memory block."
 parameters:
   - name: "string"
     type: "void *"
@@ -18,3 +20,4 @@ description: |
   block pointed to by the parameter, string. The function will return the pointer to the 
   memory block which was overwritten.
 associated: []
+os_affinity: ["std"]

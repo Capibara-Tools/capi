@@ -1,1 +1,1 @@
-os_affinity: ["windows"]
+summary: "Some windows socket and internet ultilities."

@@ -1,5 +1,7 @@
 summary: "Converts an [`inttypes/uint32_t`] from host byte order to network byte order."
-returns: "[`inttypes/uint32_t`]"
+returns:
+  type: "[`inttypes/uint32_t`]"
+  description: "The hostlong in network byte order."
 parameters:
   - name: "hostlong"
     type: "[`inttypes/uint32_t`]"
@@ -11,3 +13,4 @@ description: |
   that a long being provided to the socket functions is Big-endian irrespective of the native
   endianess of the host.
 associated: ["arpa/inet/htons", "arpa/inet/ntohl", "arpa/inet/ntohs"]
+os_affinity: ["unix"]

@@ -1,0 +1,7 @@
+summary: "An unsigned integer type capable of representing system ports from 0 to 65535."
+type: "[`inttypes/uint16_t`]"
+associated_ref: ""
+description: |
+  An unsigned integer type capable of representing system ports from 0 to 65535. This port
+  specific integer type capable of storing exactly 16 bits.
+os_affinity: ["unix"]

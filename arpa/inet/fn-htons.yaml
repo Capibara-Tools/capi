@@ -1,5 +1,7 @@
 summary: "Converts an [`inttypes/uint16_t`] from host byte order to network byte order."
-returns: "[`inttypes/uint16_t`]"
+returns:
+  type: "[`inttypes/uint16_t`]"
+  description: "The hostshort in network byte order."
 parameters:
   - name: "hostshort"
     type: "[`inttypes/uint16_t`]"
@@ -11,3 +13,4 @@ description: |
   that a short being provided to the socket functions is Big-endian irrespective of the native
   endianess of the host.
 associated: ["arpa/inet/htonl", "arpa/inet/ntohl", "arpa/inet/ntohs"]
+os_affinity: ["unix"]
