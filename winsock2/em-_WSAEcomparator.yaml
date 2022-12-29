@@ -9,4 +9,4 @@ description: |
   actually has 3 type definitions: [`winsock2/WSAECOMPARATOR`], *[`winsock2/PWSAECOMPARATOR`],
   *[`winsock2/LPWSAECOMPARATOR`]. It's also indirectly a member of the struct, [`winsock2/_WSAVersion`]
   by means of type definition.
-os_affinity: ["win"]
+os_affinity: ["windows"]

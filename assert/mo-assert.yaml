@@ -1,4 +1,4 @@
-summary: "The value of a null pointer constant."
+summary: "A macro function that is used to diagnose or test various pieces of code."
 kind: !function
   returns:
     type: "void"

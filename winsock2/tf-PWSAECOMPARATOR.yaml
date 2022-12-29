@@ -3,4 +3,4 @@ type: "*[`winsock2/_WSAEcomparator`]"
 associated_ref: "winsock2/_WSAEcomparator"
 description: |
   One of several type definitions over the [`winsock2/_WSAEcomparator`] enum.
-os_affinity: ["win"]
+os_affinity: ["windows"]

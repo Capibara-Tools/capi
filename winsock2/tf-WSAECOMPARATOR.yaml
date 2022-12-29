@@ -5,4 +5,4 @@ description: |
   One of several type definitions over the [`winsock2/_WSAEcomparator`] enum.
   However, this type definition is the primary alias and it's also referenced
   as a member of [`winsock2/_WSAVersion`] struct.
-os_affinity: ["win"]
+os_affinity: ["windows"]

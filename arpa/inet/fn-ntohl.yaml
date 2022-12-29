@@ -1,7 +1,7 @@
 summary: "Converts an [`inttypes/uint32_t`] from network byte order to host byte order."
 returns:
   type: "[`inttypes/uint32_t`]"
-  description: "The netlong is host byte order."
+  description: "The netlong in host byte order."
 parameters:
   - name: "netlong"
     type: "[`inttypes/uint32_t`]"
