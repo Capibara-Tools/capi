@@ -1,5 +1,7 @@
 summary: "Copies a given number of bytes from a source memory area to a destination memory area."
-returns: "void *"
+returns:
+  type: "void *"
+  description: "A pointer to the destination."
 parameters:
   - name: "dest"
     type: "void *"
@@ -18,3 +20,4 @@ description: |
   don't necessarily have to. It copies a given number of bytes from a source memory area
   to a destination memory area. The function will return a pointer to the destination.
 associated: ["string/memmove"]
+os_affinity: ["std"]

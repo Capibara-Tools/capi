@@ -1,5 +1,7 @@
 summary: "Compares one string to another string"
-returns: "char *"
+returns:
+  type: "int"
+  description: "An integer <, >, or = to 0 respective to string_1 compared to string_2."
 parameters:
   - name: "string_1"
     type: "const char *"
@@ -15,3 +17,4 @@ description: |
   return an integer less than, greater than, or equal to 0 respective to the possible states 
   where string_1 is less than, greater than, or equal to string_2.
 associated: ["string/strncmp"]
+os_affinity: ["std"]

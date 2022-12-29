@@ -1,0 +1,9 @@
+summary: An internet address struct capable of representing an ip address.
+fields:
+  - name: server_address
+    type: "[`netinet/in/in_addr_t`]"
+    description: "The ip address of the server."
+description: |
+  The in_addr struct is a component of the [`netinet/in/sock_addr_in`] structure. This struct is commonly
+  used with internet addressing. And it's used frequently in socket networking.
+os_affinity: ["unix"]

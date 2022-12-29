@@ -1,5 +1,7 @@
 summary: "Finds the first instance of an entire substring, needle, in a larger string, haystack."
-returns: "char *"
+returns:
+  type: "char *"
+  description: "A pointer to the first matched instance of the specified substring or NULL."
 parameters:
   - name: "haystack"
     type: "const char *"
@@ -14,3 +16,4 @@ description: |
   The search does not compare null-terminating characters. The functions returns a pointer to
   the first matched instance or NULL if the substring is not matched.
 associated: []
+os_affinity: ["std"]

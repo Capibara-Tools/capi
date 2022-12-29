@@ -1,5 +1,7 @@
 summary: "Converts an [`inttypes/uint32_t`] from network byte order to host byte order."
-returns: "[`inttypes/uint32_t`]"
+returns:
+  type: "[`inttypes/uint32_t`]"
+  description: "The netlong in host byte order."
 parameters:
   - name: "netlong"
     type: "[`inttypes/uint32_t`]"
@@ -11,3 +13,4 @@ description: |
   that shorts in network byte order can have their value represented natively irrespective 
   of the native endianess of the host.
 associated: ["arpa/inet/htons", "arpa/inet/htonl", "arpa/inet/ntohs"]
+os_affinity: ["unix"]

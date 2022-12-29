@@ -1,1 +1,1 @@
-os_affinity: ["std"]
+summary: "Basic string utilities for interacting with arrays of characters and byte buffers."

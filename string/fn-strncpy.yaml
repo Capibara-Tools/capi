@@ -1,5 +1,7 @@
 summary: "Copies a given number of characters from the source string to the destination string location."
-returns: "char *"
+returns:
+  type: "char *"
+  description: "A pointer to the destination string."
 parameters:
   - name: "dest"
     type: "char *"
@@ -20,3 +22,4 @@ description: |
   difference will be filled with null bytes. It also returns a pointer to the
   destination string.
 associated: ["string/strcpy"]
+os_affinity: ["std"]

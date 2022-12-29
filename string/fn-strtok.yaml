@@ -1,5 +1,7 @@
 summary: "Breaks a string into a series of tokens using a delimiter"
-returns: "char *"
+returns:
+  type: "char *"
+  description: "A pointer to a token."
 parameters:
   - name: "string"
     type: "char *"
@@ -17,3 +19,4 @@ description: |
   function returns a pointer to one token for each call. The initial input string has
   been exhausted when the function returns NULL.
 associated: []
+os_affinity: ["std"]

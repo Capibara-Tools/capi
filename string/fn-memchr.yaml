@@ -1,5 +1,7 @@
 summary: "Searches for the first instance of a character in a byte buffer up to a given number of bytes."
-returns: "void *"
+returns:
+  type: "void *"
+  description: "A pointer to the matching byte or NULL."
 parameters:
   - name: "string"
     type: "const void *"
@@ -15,3 +17,4 @@ description: |
   the location pointed to by the string pointer. If the function finds the specified character it will return
   a pointer to the matching byte. If not, it will return NULL.
 associated: []
+os_affinity: ["std"]

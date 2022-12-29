@@ -1,5 +1,7 @@
 summary: "Finds the first character in a string that is shared in common with an array of accepted characters,"
-returns: "char *"
+returns:
+  type: "char *"
+  description: "A pointer to the first matched character or NULL."
 parameters:
   - name: "string"
     type: "const char *"
@@ -14,3 +16,4 @@ description: |
   shared in common with the array of accepted characters, accepted_chars. If it finds
   a match it returns a pointer to the first matched character. Otherwise it returns NULL.
 associated: []
+os_affinity: ["std"]

@@ -1,5 +1,7 @@
 summary: "Looks up an error number in an internal array of definitions and returns a pointer to an error message string."
-returns: "char *"
+returns:
+  type: "char *"
+  description: "A pointer to an associated error message string."
 parameters:
   - name: "error_number"
     type: "int"
@@ -9,3 +11,4 @@ description: |
   to an associated error message string. The contents of the error strings are dependent upon the
   developing platform and compiler.
 associated: []
+os_affinity: ["std"]

@@ -1,5 +1,7 @@
 summary: "Returns the length of the initial segment of the string consisting solely of characters found in an array of accepted characters."
-returns: "[`string/size_t`]"
+returns:
+  type: "[`string/size_t`]"
+  description: "The resulting length."
 parameters:
   - name: "string"
     type: "const char *"
@@ -14,3 +16,4 @@ description: |
   that is not shared in common with the acceptance array. The resulting length
   is returned.
 associated: ["string/strcspn"]
+os_affinity: ["std"]

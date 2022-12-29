@@ -1,5 +1,7 @@
 summary: "Transforms a specified number of characters from a string into an alternative locale and writes them to a destination array."
-returns: "[`string/size_t`]"
+returns:
+  type: "[`string/size_t`]"
+  description: "The size of the transformed string up to but not including the null-terminating character."
 parameters:
   - name: "destination"
     type: "char *"
@@ -19,3 +21,4 @@ description: |
   but not including the null-terminating character. NOTE: If the max_num_of_chars is 0,
   the pointer to the buffer, destination, can be null.
 associated: []
+os_affinity: ["std"]
