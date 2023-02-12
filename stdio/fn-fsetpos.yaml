@@ -1,0 +1,19 @@
+summary: "Sets the current file position of a given stream and based on the contents of the position pointer."
+returns:
+  type: "int"
+  description: "Returns 0 on success or a non-zero value on failure."
+parameters:
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object of the stream to be closed."
+  - name: "position"
+    type: "const [`stdio/fpos_t`] *"
+    description: "A pointer to the fpos_t type containing the location which will be used to set current file position."
+description: |
+  This function sets the current file position of a given stream and 
+  based on the location given by position pointer. The input object is
+  of type [`stdio/fpos_t`]. This should only be used with [`stdio/fgetpos`].
+  The function returns 0 on success or a non-zero value on failure. It will also 
+  set errno on failure.
+associated: []
+os_affinity: ["std"]

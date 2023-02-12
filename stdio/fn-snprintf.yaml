@@ -1,0 +1,70 @@
+summary: "Prints formatted output to a string up to specified number of characters."
+returns:
+  type: "int"
+  description: "Returns the total number of characters written, or on failure a negative number."
+parameters:
+  - name: "output_string"
+    type: "char *"
+    description: "A pointer to the string where the formatted output will be printed."
+  - name: "max_num_of_characters"
+    type: "[`stdio/size_t`]"
+    description: "The maximum number of formatted character output that should be written to the string."
+  - name: "format"
+    type: "const char *"
+    description: "The string containing text to be printed which may optionally contain format specifiers."
+  - name: "..."
+    type: "N/A"
+    description: "Additional arguments matching the types and number of format specifiers in the format string."
+description: |
+  Note: This function is considered a safer alternative to a very similar function [`stdio/sprintf`],
+  because this function limits the number of characters that will be written.
+
+  The function prints formatted output to a string up to specified number of characters. The format may 
+  contain format specifiers which indicate how data such as integers, floats, arrays and other chararacters
+  should be presented in a text format. A format specifier has the following format,
+  '%{flags}{width}{.precision}{length}specifier' where the parts in brackets are optional. 
+
+  There are 10 specifiers:
+  - 'a' or 'A' indictes hexadecimal floating point in lowercase or uppercase respectively.
+  - 'c' indicates a character.
+  - 'd' or 'i' indicates a signed decimal integer.
+  - 'e' or 'E' indicates scientific notation using e or E respectively.
+  - 'f' or 'F' indicates a decimal floating point.
+  - 'g' or 'G' indicates to use the shortest output of %e or %f or the shortest output of %E or %F respectively.
+  - 'n' indicates to print nothing, but instead writes the amount of written characters to the specified pointer which must be a signed int.
+  - 'p' indicates a pointer address.
+  - 's' indicates a string of characters.
+  - '%' indicates that the percent sign should be escaped rather than formatted.
+
+  There are 5 flags:
+  - '-' indicates to left-justify within a given field width.
+  - '+' forces the result to be preceeded by its sign even for positive numbers.
+  - ' ' if no sign is written it should be preceeded by a space instead.
+  - '#' with specifiers, o, x or X, the result is preceeded with 0, 0x or 0X for non-zero values. With the other numeric specifiers it forces the result to contain a decimal point.
+  - '0' left-pads the results with 0 rather spaces given a certan width.
+
+  The width if specified may be a number or '*' the latter of which indicates that the value
+  to be used there is passed in the function variable arguments. The value passed to
+  this format component via either means will pad small outputs up to the given value but not
+  truncate outputs with lengths larger than the value.
+
+  The precision if specified may be a number or '.*' the latter of which indicates that the value
+  to be used there is passed in the function variable arguments. The value passed to
+  this format component via either means will indicate that for:
+  - 'integer specifiers' indicates the minimum number of digits to write. A value of 0 will cause an integer value of 0 to not be written.
+  - 'floating specifiers' indicates the number of digits to print after the decimal place.
+  - 'g or G' indicates that maximum number of significant digits to print.
+  - 's' indicates the maximum number of characters to print.
+
+  The length if specified modifies the length type of the data based on certain characters specified.
+  - 'l' indicates that a type should be shortened (applies to integers.)
+  - 'h' indicates that a type should be lengthened or made wide (applies to integers and characters.)
+  - 'L' indicates that a type should be made a long double (applies to floating point types.)
+
+  The additional arguments (...) should be populated with data that is consistent with the format specifiers
+  indicated in the format string. For example, a int should be passed to match a '%d' and a character should
+  be passed to match a '%c'.
+
+  This function returns the total number of characters written, or on failure a negative number.
+associated: ["stdio/snprintf"]
+os_affinity: ["std"]

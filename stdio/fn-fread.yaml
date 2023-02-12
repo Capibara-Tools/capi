@@ -1,0 +1,27 @@
+summary: "Reads data from a given stream into a buffer pointed to by destination."
+returns:
+  type: "[`stdio/size_t`]"
+  description: "The total number of elements that were read."
+parameters:
+  - name: "destination"
+    type: "void *"
+    description: "A pointer to a block of memory that has a capacity of at least element_size*number_of_elements bytes"
+  - name: "element_size"
+    type: "[`stdio/size_t`]"
+    description: "The size of an individual element to be read."
+  - name: "number_of_elements"
+    type: "[`stdio/size_t`]"
+    description: "The number of elements of size, element_size, that should be read in total."
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object referencing an input stream."
+description: |
+  The function reads up to number_of_elements elements of size, element_size, and writes them
+  to destination. The function will return the total number of elements read and if this number
+  disagrees with number_of_elements specified than an error has occurred or the end of the file
+  was reached. If element_size is set to 1, then number_of_elements is simply the number of bytes
+  one wishes to read. If element_size or number_of_elements is set to 0 then the function
+  returns 0 and the array and stream remain untouched. The position in the file will be incremented
+  by the number of bytes read.
+associated: []
+os_affinity: ["std"]

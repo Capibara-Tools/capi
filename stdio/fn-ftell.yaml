@@ -1,0 +1,14 @@
+summary: "Retrieves the current position in bytes of the file cursor."
+returns:
+  type: "long int"
+  description: "Returns the current position in bytes or -1 if there was an error."
+parameters:
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object of the stream to be closed."
+description: |
+  This function retrieves the current position in bytes of the file cursor.
+  It will returns the position on success or -1 on failure. It will also 
+  set errno on failure.
+associated: []
+os_affinity: ["std"]

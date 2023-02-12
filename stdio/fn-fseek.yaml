@@ -1,0 +1,20 @@
+summary: "Sets the position of the file cursor to the given offset."
+returns:
+  type: "int"
+  description: "Returns 0 if successful otherwise a non-zero value."
+parameters:
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object referencing an open stream."
+  - name: "offset"
+    type: "long int"
+    description: "The number of bytes to offset"
+  - name: "offset_origin"
+    type: "int"
+    description: "The base position to which the offset will be added. Takes constants: [`stdio/SEEK_SET`], [`stdio/SEEK_CUR`], [`stdio/SEEK_END`]."
+description: |
+  The function sets the file cursor to a given position based on the addition of an offset and an offset_origin. The offset_origin
+  may be the start of a file given by [`stdio/SEEK_SET`], the current position given by [`stdio/SEEK_CUR`], or the end of a file given by
+  [`stdio/SEEK_END`]. The function returns 0 upon success and a non-zero value upon failure.
+associated: []
+os_affinity: ["std"]

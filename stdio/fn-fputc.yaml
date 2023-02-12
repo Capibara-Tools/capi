@@ -1,0 +1,17 @@
+summary: "Writes a given unsigned char onto a stream and advances the position indicator."
+returns:
+  type: "int"
+  description: "Returns the supplied character on success or [`stdio/EOF`] on failure."
+parameters:
+  - name: "character"
+    type: "int"
+    description: "The unsigned char to be written onto the stream cast as a int."
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object of the stream on which to write."
+description: |
+  This function writes the unsigned char to a given stream. It will also advance the file stream
+  position indicator. The function will return the supplied character on success or [`stdio/EOF`]
+  on failure. On failure, the error indicator is also set.
+associated: []
+os_affinity: ["std"]

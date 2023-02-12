@@ -1,0 +1,16 @@
+summary: "Renames a file referred to by current_filename to the name specified by new_filename"
+returns:
+  type: "int"
+  description: "Returns 0 upon success and -1 upon failure."
+parameters:
+  - name: "current_filename"
+    type: "const char *"
+    description: "The current name of the file."
+  - name: "new_filename"
+    type: "const char *"
+    description: "The new name of the file."
+description: |
+  The function renames a given file to a new filename specified by, new_filename. The function
+  either returns 0 upon success or -1 upon failure. In the event of a failure, errno is also set.
+associated: []
+os_affinity: ["std"]

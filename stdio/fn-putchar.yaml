@@ -1,0 +1,15 @@
+summary: "Writes a given unsigned char onto [`stdio/stdout`] and advances the position indicator."
+returns:
+  type: "int"
+  description: "Returns the supplied character on success or [`stdio/EOF`] on failure."
+parameters:
+  - name: "character"
+    type: "int"
+    description: "The unsigned char to be written onto the [`stdio/stdout`] cast as a int."
+description: |
+  This function writes the unsigned char to [`stdio/stdout`] It will also advance the file stream
+  position indicator. The function will return the supplied character on success or [`stdio/EOF`]
+  on failure. On failure, the error indicator is also set. Basically the same as [`stdio/putc`]
+  with [`stdio/stdout`] as an argument.
+associated: []
+os_affinity: ["std"]

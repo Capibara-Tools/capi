@@ -1,0 +1,24 @@
+summary: "Opens a given filename using a given mode."
+returns:
+  type: "[`stdio/FILE`] *"
+  description: "Returns a file pointer on success otherwise [`stdio/NULL`] is returned."
+parameters:
+  - name: "filename"
+    type: "const char *"
+    description: "A string containing the filename to open."
+  - name: "mode"
+    type: "const char *"
+    description: "A string specifying the file access mode."
+description: |
+  The function attempts to open the file specified by the filename string. There are six different modes
+  by which a file may be accessed: 
+  - 'r' opens a file for reading but it must exist.
+  - 'w' creates an empty file for writing. If a file with the same name exists, that file will be erased.
+  - 'a' opens a file and appends to it. The file will be created if it doesn't exist.
+  - 'r+' opens a file for reading and writing but it must exist.
+  - 'w+' creates an empty file for reading and writing. If a file with the same name exists, that file will be erased.
+  - 'a+' opens a file for reading or appending. The file will be created if it doesn't exist.
+  Users may also append a 'b' character to indicate they wish to open the file in a binary mode. This function
+  returns a file pointer on success otherwise [`stdio/NULL`] is returned and the global errno is set.
+associated: []
+os_affinity: ["std"]

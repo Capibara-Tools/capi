@@ -1,0 +1,18 @@
+summary: "Generates a unique a valid temporary filename that does not exist."
+returns:
+  type: "char *"
+  description: "A pointer to the generated file name if successful, otherwise [`stdio/NULL`]."
+parameters:
+  - name: "output_buffer"
+    type: "char *"
+    description: "A pointer to the string buffer where the generated name should be placed. Must be at least [`stdio/L_tmpnam`] characters long."
+description: |
+  This function generates a unique a valid temporary filename that does not exist. If the output_buffer
+  is a [`stdio/NULL`] pointer then the function will use an internal buffer that will be overwritten when
+  the function is called again. If an output buffer is supplied it should be at least [`stdio/L_tmpnam`]
+  characters long. The function will return either a pointer to the output_buffer or the internal buffer
+  depending on whether an output buffer was supplied. If the function is not successful then the function
+  will return [`stdio/NULL`]. Users may wish to check [`stdio/TMP_MAX`] to see how many unique file names
+  this function is capable of generating.
+associated: []
+os_affinity: ["std"]

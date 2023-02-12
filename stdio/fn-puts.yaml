@@ -1,0 +1,14 @@
+summary: "Writes a given string to [`stdio/stdout`] up to but not including the null terminating character."
+returns:
+  type: "int"
+  description: "Returns the character read as an unsigned char cast to an int on success or [`stdio/EOF`] on failure."
+parameters:
+  - name: "string"
+    type: "const char *"
+    description: "A pointer to the string that will be written to the [`stdio/stdout`]."
+description: |
+  This function writes a string to [`stdio/stdout`]. It also advance the file stream
+  position indicator. On success, the function will return a non-negative value. On
+  failure, [`stdio/EOF`] is returned.
+associated: []
+os_affinity: ["std"]

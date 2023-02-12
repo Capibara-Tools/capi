@@ -1,0 +1,8 @@
+summary: "This is a type whose information represents a position in a file."
+type: "opaque struct reference"
+associated_ref: ""
+description: |
+  The fpos_t type is considered an opaque data type, because it is implementation defined. Users aren't
+  supposed to access the internal properties of the struct and it's only intended to be used with
+  [`stdio/fgetpos`] or [`stdio/fsetpos`]
+os_affinity: ["std"]

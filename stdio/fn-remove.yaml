@@ -1,0 +1,13 @@
+summary: "Deletes a file referred to by a given filename."
+returns:
+  type: "int"
+  description: "Returns 0 upon success and -1 upon failure."
+parameters:
+  - name: "filename"
+    type: "const char *"
+    description: "The current name of the file to be deleted."
+description: |
+  The function deletes a file based on its filename. The function either returns 0 upon success
+  or -1 upon failure. In the event of a failure, errno is also set.
+associated: []
+os_affinity: ["std"]

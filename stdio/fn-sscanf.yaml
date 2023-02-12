@@ -1,0 +1,47 @@
+summary: "Reads formatted input from a string via format specifiers."
+returns:
+  type: "int"
+  description: "Returns the total number items parsed, or on failure a negative number."
+parameters:
+  - name: "format"
+    type: "const char *"
+    description: "The string containing the text to parsed."
+  - name: "format"
+    type: "const char *"
+    description: "The string containing the pattern of text to be read in which may optionally contain format specifiers."
+  - name: "..."
+    type: "N/A"
+    description: "Additional arguments matching the types and number of format specifiers in the format string."
+description: |
+  The function reads formatted input from string into supplied buffers. The format may 
+  contain format specifiers which indicate how data such as integers, floats, arrays and other chararacters
+  should be parsed in a text format. A format specifier has the following format,
+  '%{*}{width}{modifiers}specifier' where the parts in brackets are optional. 
+
+  There are 10 specifiers:
+  - 'a' or 'A' indictes hexadecimal floating point in lowercase or uppercase respectively.
+  - 'c' indicates a character.
+  - 'd' indicates an optionally signed decimal integer.
+  - 'e', 'E', 'f', 'g', or 'G' indicates a decimal floating point.
+  - 'n' does not read any characters but rathers writes the number of characters already read to the associated buffer.
+  - 'o' indicates an octal integer.
+  - 's' indicates a string of characters which will be read until a whitespace character (a blank, newline, or tab) is encountered.
+  - 'u' indicates an unsigned decimal integer.
+  - 'x' or 'X' indicates a hexadecimal integer.
+
+  The length if specified modifies the length type of the data based on certain characters specified.
+  - 'l' indicates that a type should be shortened (applies to integers.)
+  - 'h' indicates that a type should be lengthened or made wide (applies to integers and floats.)
+  - 'L' indicates that a type should be made a long double (applies to floating point types.)
+
+  The width if specified indicates the maximum number of letters to parse in the current reading operation.
+
+  The * if present indicates that the value should be processed but not written to any buffer.
+
+  The additional arguments (...) should be populated with data that is consistent with the format specifiers
+  indicated in the format string. For example, an int buffer pointer should be passed to match a '%d' and a 
+  character buffer pointer should be passed to match a '%c'.
+
+  This function returns the total number items parsed, or on failure a negative number.
+associated: []
+os_affinity: ["std"]

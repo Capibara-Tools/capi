@@ -1,0 +1,6 @@
+summary: "An integer which indicates the maximum number of files that a system can open simultaneously."
+kind: !object
+description: |
+  This is just a value which indicates the maximum number of files that be opened simultaneously. Going over
+  this value may be possible but will likely cause undefined or strange behavior and should be avoided.
+os_affinity: ["std"]

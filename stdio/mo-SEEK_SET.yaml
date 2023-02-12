@@ -1,0 +1,7 @@
+summary: "A sentinel value used with [`stdio/fseek`] to indicate that the cursor should be moved some offset from the start of the file."
+kind: !object
+description: |
+  This macro evaluates to an integer constant intended to be used as a possible input to the offset_origin argument of the [`stdio/fseek`] function.
+  When used as such it indicates that cursor should be moved some offset from the start of the file as opposed to being moved an offset from the
+  current position, [`stdio/SEEK_CUR`], or end, [`stdio/SEEK_END`].
+os_affinity: ["std"]

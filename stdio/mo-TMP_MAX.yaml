@@ -1,0 +1,6 @@
+summary: "The maximum number of unique filenames that [`stdio/tmpnam`] can create."
+kind: !object
+description: |
+  This macro evaluates to an integer constant that represents the maximum number of 
+  unique temporary filenames that can be created by the [`stdio/tmpnam`] function.
+os_affinity: ["std"]

@@ -1,0 +1,15 @@
+summary: "Gets the next unsigned char from a stream and advances the position indicator."
+returns:
+  type: "int"
+  description: "Returns the character read as an unsigned char cast to an int on success or [`stdio/EOF`] on failure."
+parameters:
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object of the stream from which to read."
+description: |
+  This function reads the next unsigned char from a given stream. It will also advance the file stream
+  position indicator. In order to return potential error values the result is cast to an int and the
+  return result will either be the integer representation of the unsigned char on success or [`stdio/EOF`]
+  on failure. Basically the same as [`stdio/getc`].
+associated: []
+os_affinity: ["std"]

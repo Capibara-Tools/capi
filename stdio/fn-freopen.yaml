@@ -1,0 +1,29 @@
+summary: "Associates a new filename with a given open stream and closes old file that was referenced by the stream."
+returns:
+  type: "[`stdio/FILE`] *"
+  description: "A pointer identifying the stream if successful, otherwise [`stdio/NULL`]."
+parameters:
+  - name: "filename"
+    type: "const char *"
+    description: "A string containing the filename to open."
+  - name: "mode"
+    type: "const char *"
+    description: "A string specifying the file access mode."
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object referencing an open stream."
+description: |
+  The function opens a new file binds it to an existing stream and closes the old file referenced
+  by the existing stream. One might consider doing for example this to reassociate stdout with a
+  text file rather than the system prescribed stdout. This function attempts to open the file specified
+  by the filename string. There are six different modes by which a file may be accessed: 
+  - 'r' opens a file for reading but it must exist.
+  - 'w' creates an empty file for writing. If a file with the same name exists, that file will be erased.
+  - 'a' opens a file and appends to it. The file will be created if it doesn't exist.
+  - 'r+' opens a file for reading and writing but it must exist.
+  - 'w+' creates an empty file for reading and writing. If a file with the same name exists, that file will be erased.
+  - 'a+' opens a file for reading or appending. The file will be created if it doesn't exist.
+  Users may also append a 'b' character to indicate they wish to open the file in a binary mode. This function
+  returns a file pointer on success otherwise [`stdio/NULL`] is returned.
+associated: []
+os_affinity: ["std"]

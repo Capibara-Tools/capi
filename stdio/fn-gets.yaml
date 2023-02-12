@@ -1,0 +1,15 @@
+summary: "Reads a line from [`stdio/stdin`] and stores it into a given output buffer."
+returns:
+  type: "char *"
+  description: "On success, the function will return a pointer to the output_buffer. On success or [`stdio/EOF`] on failure."
+parameters:
+  - name: "output_buffer"
+    type: "char *"
+    description: "A pointer to the string buffer where the output is to be stored."
+description: |
+  This function reads a line from [`stdio/stdin`]. It also advance the file stream
+  position indicator. It will either read until it encounters a newline or [`stdio/EOF`].
+  On success, the function will return a pointer to the output_buffer. On failure, 
+  a null pointer is returned.
+associated: []
+os_affinity: ["std"]

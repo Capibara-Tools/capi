@@ -1,0 +1,6 @@
+summary: "The max length of a character array capable of holding the longest possible filename."
+kind: !object
+description: |
+  A macro whose value is the max length of a character array capable of holding the longest possible filename. This varies
+  per implementation and in cases where there is no imposed limit this is the recommended longest filename length.
+os_affinity: ["std"]

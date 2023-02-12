@@ -1,0 +1,7 @@
+summary: "A sentinel value used with [`stdio/setvbuf`] to indicate a stream should be line buffered."
+kind: !object
+description: |
+  This macro evaluates to an integer constant intended to be used as a possible input the mode argument of the [`stdio/setvbuf`] function.
+  When used as such it indicates that a stream should be line buffered as opposed to being fully buffered, [`stdio/_IOFBF`], or
+  unbuffered, [`stdio/_IONBF`].
+os_affinity: ["std"]

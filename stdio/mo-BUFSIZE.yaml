@@ -1,0 +1,8 @@
+summary: "An integer constant expression that is a suitable choice for the size argument to [`stdio/setvbuf`]."
+kind: !object
+description: |
+  The value chosen for this constant is per implementation to the stream efficient. As such it's a
+  good choice for the buffer size you use with [`stdio/setvbuf`]. Because the type is generally I/O optimized
+  and guaranteed to be at leasr 256 bytes it's also commonly used as a generic buffer size used for unrelated
+  tasks such as reading lines of input.
+os_affinity: ["std"]

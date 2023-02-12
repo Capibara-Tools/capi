@@ -1,0 +1,6 @@
+summary: "A macro that expands to a [`stdio/FILE`] pointer corresponding to the standard error stream."
+kind: !object
+description: |
+  This macro evaluates to a [`stdio/FILE`] pointer that corresponds to the standard error stream. Similar macros include
+  [`stdio/stdin`], for standard input, and [`stdio/stdout`] for standard output.
+os_affinity: ["std"]

@@ -1,0 +1,14 @@
+summary: "Clears end of file and error indicators for a given file stream."
+returns:
+  type: "void"
+  description: "Returns nothing."
+parameters:
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object of the stream upon which to clear indicators."
+description: |
+  This function clears end of file and error indicators for a given file stream. It shall not 
+  change the setting of errno if stream is valid, however depending upon implementation, errno
+  may be modified if the stream is invalid.
+associated: []
+os_affinity: ["std"]

@@ -1,0 +1,12 @@
+summary: "Creates a temp file and returns a pointer to the file in binary update mode (wb+)."
+returns:
+  type: "[`stdio/FILE`] *"
+  description: "A pointer identifying the stream if successful, otherwise [`stdio/NULL`]."
+parameters:
+description: |
+  This function creates a temp file and returns a pointer to the file in binary update mode (wb+). 
+  Upon program termination or stream closure the file will automatically be cleaned up. If successful,
+  the function returns a pointer to stream associated with the new temporary file. Otherwise this
+  function will return [`stdio/NULL`].
+associated: []
+os_affinity: ["std"]

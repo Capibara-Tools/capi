@@ -1,0 +1,9 @@
+summary: "A negative sentinel value, used to indicate the end of a file has been reached."
+kind: !object
+description: |
+  This value is typically returned when there is no other data to return because the file cursor
+  is at the end of the file. That said, some functions may also return it when there is simply just
+  some kind of read error rather than solely hitting the end of a file. Users should use
+  the [`stdio/feof`] function in order to determine if a generic read error is actually caused
+  by running into the end of a file or something else.
+os_affinity: ["std"]

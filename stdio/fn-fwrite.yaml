@@ -1,0 +1,25 @@
+summary: "Writes data to a given stream from an array pointed to by source."
+returns:
+  type: "[`stdio/size_t`]"
+  description: "The total number of elements that were written."
+parameters:
+  - name: "source"
+    type: "void *"
+    description: "A pointer to an array of elements to be written."
+  - name: "element_size"
+    type: "[`stdio/size_t`]"
+    description: "The size of an individual element to be written."
+  - name: "number_of_elements"
+    type: "[`stdio/size_t`]"
+    description: "The number of elements of size, element_size, that should be written in total. Must not be larger than the number_of_elements in the array."
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object referencing an output stream."
+description: |
+  The function writes up to number_of_elements elements of size, element_size, to stream.
+  The function will return the total number of elements written and if this number
+  disagrees with number_of_elements specified than an error has occurred. If element_size is set
+  to 1, then number_of_elements is simply the number of bytes one wishes to write. The position in
+  the file will be incremented by the number of bytes written.
+associated: []
+os_affinity: ["std"]

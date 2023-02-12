@@ -1,0 +1,7 @@
+summary: "The value of a null pointer constant."
+kind: !object
+description: |
+  It may be defined as ((void*)0), 0 or 0L depending on the compiler vendor. Frequently
+  used as a possible return value for functions that may or may not return a defined result
+  based on arguments.
+os_affinity: ["std"]

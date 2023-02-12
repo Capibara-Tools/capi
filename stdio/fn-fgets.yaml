@@ -1,0 +1,21 @@
+summary: "Reads a line from a given stream and stores it into a given output buffer."
+returns:
+  type: "char *"
+  description: "On success, the function will return a pointer to the output_buffer. On success or [`stdio/EOF`] on failure."
+parameters:
+  - name: "output_buffer"
+    type: "char *"
+    description: "A pointer to the string buffer where the output is to be stored."
+  - name: "buffer_size"
+    type: "int"
+    description: "The max number of characters including the null terminating character. Typically the buffer size."
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object of the stream from which to read."
+description: |
+  This function reads a line from the given stream. It also advance the file stream
+  position indicator. It will either read up to (buffer_size-1) number of characters
+  or until it encounters a newline or [`stdio/EOF`]. On success, the function will return
+  a pointer to the output_buffer. On failure, a null pointer is returned.
+associated: []
+os_affinity: ["std"]

@@ -1,0 +1,22 @@
+summary: "Sets the internal buffer for stream operations."
+returns:
+  type: "void"
+  description: "Returns nothing."
+parameters:
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object of the stream upon which to set the buffer."
+  - name: "buffer"
+    type: "char *"
+    description: "A pointer to the buffer object that will be used. Must be at least the size of [`stdio/BUFSIZE`]."
+description: |
+  This function sets the buffer for stream operations. The supplied buffer should be at least
+  [`stdio/BUFSIZE`] characters long or it should be a [`stdio/NULL`] pointer. If the buffer is
+  given, it will enable full buffering consistent with passing [`stdio/_IOFBF`] to [`stdio/setvbuf`]
+  with a buffer size of [`stdio/BUFSIZE`]. Passing a [`stdio/NULL`] pointer will disable buffering
+  for the given stream, consistent with with passing [`stdio/_IONBF`] to [`stdio/setvbuf`] with a
+  buffer size of 0.
+
+  For more options use [`stdio/setvbuf`].
+associated: []
+os_affinity: ["std"]

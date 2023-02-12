@@ -1,0 +1,13 @@
+summary: "Checks the error indicator for a given stream."
+returns:
+  type: "int"
+  description: "Returns non-zero if the error indicator is set otherwise returns zero."
+parameters:
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object of the stream to be checked."
+description: |
+  This function checks a given file stream for the error indicator. If the indicator is
+  set then the function will return non-zero otherwise it will return 0.
+associated: []
+os_affinity: ["std"]

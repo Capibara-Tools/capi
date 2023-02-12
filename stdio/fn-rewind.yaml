@@ -1,0 +1,13 @@
+summary: "Resets the cursor position for a given stream to the beginning of the file."
+returns:
+  type: "void"
+  description: "Returns nothing."
+parameters:
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object referencing a stream."
+description: |
+  This function sets the current file position of a given stream and 
+  based to the beginning of the file. It returns nothing.
+associated: []
+os_affinity: ["std"]

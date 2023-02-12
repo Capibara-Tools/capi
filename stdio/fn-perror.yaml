@@ -1,0 +1,13 @@
+summary: "Prints a custom string followed by the descriptive error message to [`stdio/stderr`]."
+returns:
+  type: "void"
+  description: "Returns nothing."
+parameters:
+  - name: "string"
+    type: "const char *"
+    description: "The custom string to be written."
+description: |
+  This function prints a custom string followed by the descriptive error message associated
+  with the error indicator to [`stdio/stderr`]. The functions returns nothing.
+associated: []
+os_affinity: ["std"]

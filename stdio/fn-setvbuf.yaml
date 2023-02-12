@@ -1,0 +1,30 @@
+summary: "Sets the internal buffer for stream operations."
+returns:
+  type: "int"
+  description: "Returns a 0 on success or a non-zero value upon failure."
+parameters:
+  - name: "stream"
+    type: "[`stdio/FILE`] *"
+    description: "A pointer to the FILE object of the stream upon which to set the buffer."
+  - name: "buffer"
+    type: "char *"
+    description: "A pointer to the buffer object that will be used. Must be at least the size of [`stdio/BUFSIZE`]."
+  - name: "mode"
+    type: "int"
+    description: "Specifies the file buffering mode. Takes constants: [`stdio/_IOFBF`], [`stdio/_IOLBF`], [`stdio/_IONBF`]."
+  - name: "size"
+    type: "[`stdio/size_t`]"
+    description: "An integer representing the size of the buffer in bytes."
+description: |
+  This function sets the buffer for stream operations. The recommended size for a buffer should be
+  at least [`stdio/BUFSIZE`] characters long. Or, it can be 0 if the buffer is a [`stdio/NULL`] pointer
+  and buffering is disabled with a mode of [`stdio/_IONBF`]. The three available buffer modes are as
+  follows: [`stdio/_IOFBF`], [`stdio/_IOLBF`], [`stdio/_IONBF`] which indicate full-buffering, line-buffering
+  and no-buffering respectively. Full buffering will write output once the buffer fills up or the stream
+  is flushed, and will read input when it is requested and the current buffer is empty. Line buffering will write
+  output when the buffer fills up or a newline is inserted into the buffer, it will read when input is requested and
+  the buffer is empty up until the next newline character. No buffering ignores the buffer and size parameters, because
+  no buffer is used. No-buffered I/O operations are written as soon as possible. This function returns a 0 on 
+  success or a non-zero value upon failure.
+associated: []
+os_affinity: ["std"]
