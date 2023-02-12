@@ -1,4 +1,4 @@
-summary: "Reads a line from [`stdio/stdin`] and stores it into a given output buffer."
+summary: "DEPRECATED: Reads a line from [`stdio/stdin`] and stores it into a given output buffer."
 returns:
   type: "char *"
   description: "On success, the function will return a pointer to the output_buffer. On success or [`stdio/EOF`] on failure."
@@ -7,6 +7,9 @@ parameters:
     type: "char *"
     description: "A pointer to the string buffer where the output is to be stored."
 description: |
+  DEPRECATED SINCE C99. DO NOT USE THIS FUNCTION AS IT CAN LEAD TO BUFFER OVERFLOW ERRORS.
+  Users looking for alternatives should prefer [`stdio/fgets`] which enables a max buffersize.
+
   This function reads a line from [`stdio/stdin`]. It also advance the file stream
   position indicator. It will either read until it encounters a newline or [`stdio/EOF`].
   On success, the function will return a pointer to the output_buffer. On failure, 
