@@ -13,7 +13,7 @@ parameters:
     type: "const char *"
     description: "The string containing text to be printed which may optionally contain format specifiers."
   - name: "argument_list"
-    type: "[`stdarg/va_list']"
+    type: "[`stdarg/va_list`]"
     description: "An argument list initialized by [`stdarg/va_start`]."
 description: |
   Note: This function is considered a safer alternative to a very similar function [`stdio/vsprintf`],
