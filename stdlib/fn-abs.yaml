@@ -1,0 +1,19 @@
+summary: "Takes the absolute value of a given integer."
+returns:
+  type: "int"
+  description: "The absolute value of the input."
+parameters:
+  - name: "value"
+    type: "int"
+    description: "The integer whose absolute value will be taken."
+description: |
+  Mathematically speaking, absolute value, is defined as the magnitude of a real number
+  without regard to its sign. Therefore, this function will give the magnitude, that is
+  positive representation, of both positive and negative integers. In other words:
+  - if the given integer is -1, then 1 will be returned.
+  - if the given integer is 0, then 0 will be returned.
+  - if the given integer is 1, then 1 will be returned.
+
+  This function returns the absolute value of the input.
+associated: []
+os_affinity: ["std"]
