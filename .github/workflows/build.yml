@@ -39,7 +39,7 @@ jobs:
           chmod 600 keys/capibara_processor_ssh_key
           ssh-agent bash -c 'ssh-add keys/capibara_processor_ssh_key; git clone git@github.com:Capibara-Tools/capibara-processor.git'
           cd capibara-processor
-          cargo run --release -- "../capibara" "https://capibara.tools"
+          cargo run --release -- "../capi" "https://capibara.tools"
           
       - name: Display Output
         run: |
