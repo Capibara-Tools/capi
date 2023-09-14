@@ -1,0 +1,7 @@
+summary: "This is a type whose information represents a directory stream."
+type: "opaque struct reference"
+associated_ref: ""
+description: |
+  The DIR type is considered an opaque data type, because it's implementation is vendor specific. Users aren't
+  supposed to access the internal properties of the struct and should only ever use pointers to the type.
+os_affinity: ["unix"]

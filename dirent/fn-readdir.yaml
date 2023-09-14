@@ -1,0 +1,21 @@
+summary: "Retrieves the next entry from an open directory stream."
+returns:
+  type: "struct [`dirent/dirent`] *"
+  description: "Returns a pointer to a dirent if successful. Otherwise null is returned and in case of an error, errno is set on failure."
+parameters:
+  - name: "directory"
+    type: "[`dirent/DIR`] *"
+    description: "A pointer to the DIR object of the stream upon which retrieve the next entry."
+description: |
+  This function retrieves the next entry from an open given directory stream. Upon opening a
+  directory the stream pointer is positioned at the first entry. The function is meant to be
+  called repeatedly to iterate through all the entries, If called again after exhausting all
+  the entries, the function will then return null without setting errno. In the event of an
+  error null will also returned and errno will be set.
+
+  Entries '..' and '.' may or may not be available depending on if they are defined for the
+  directory in question.
+
+  NOTE: This function uses static memory and as such the returned pointer should not be freed.
+associated: []
+os_affinity: ["unix"]

@@ -1,0 +1,14 @@
+summary: "Opens a directory stream associated with the directory's given name."
+returns:
+  type: "[`dirent/DIR`] *"
+  description: "Returns a pointer to a DIR if successful. Otherwise null is returned and errno is set on failure."
+parameters:
+  - name: "directory_name"
+    type: "char *"
+    description: "The name of the directory to open."
+description: |
+  This function opens a directory stream for the associated directory whose name is given. The stream pointer 
+  is positioned at the first entry. If successful the function will return a pointer to an accessible [`dirent/DIR`] object.
+  Otherwise null is returned and errno is set on failure.
+associated: []
+os_affinity: ["unix"]

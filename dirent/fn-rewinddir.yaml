@@ -1,0 +1,17 @@
+summary: "Rewinds a directory stream pointer to its first entry as though it had just been opened."
+returns:
+  type: "void"
+  description: "Function does not return."
+parameters:
+  - name: "directory"
+    type: "[`dirent/DIR`] *"
+    description: "A pointer to the DIR object of the stream to rewind."
+description: |
+  This function rewinds a directory stream pointer to its first entry as though it had just been opened. 
+  It will also update the directory stream to the current state of the corresponding directory i.e.
+  it will reflect changes to files in the directory. 
+  
+  Note: If the program calls [`unistd/fork`] then the child or parent process may continue interacting
+  with the directory but not both.
+associated: []
+os_affinity: ["unix"]

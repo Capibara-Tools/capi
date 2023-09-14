@@ -1,0 +1,19 @@
+summary: "Sets the position of a given opened directory stream."
+returns:
+  type: "void"
+  description: "Function does not return."
+parameters:
+  - name: "directory"
+    type: "[`dirent/DIR`] *"
+    description: "A pointer to the DIR object of the stream whose location will be set."
+  - name: "location"
+    type: "long int"
+    description: "A long integer representing a location in the stream."
+description: |
+  This function sets the directory stream pointer location for a given directory stream pointer. The value passed into location
+  should be obtained through a call to [`dirent/telldir`]. Attempting to call [`dirent/readdir`] after calling [`dirent/seekdir`]
+  is undefined however, if the stream pointer is rewound via a call to [`dirent/rewinddir`] as this function will re-index the
+  directory invalidating any previously known stream locations. Likewise passing in an arbitrary value not obtained from telldir
+  will also cause undefined behavior. No errors are defined.
+associated: []
+os_affinity: ["unix"]

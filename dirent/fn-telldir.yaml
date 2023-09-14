@@ -1,0 +1,16 @@
+summary: "Retrieves the position of the stream pointer for a given opened directory stream."
+returns:
+  type: "long int"
+  description: "A long int representing the current location of the stream pointer."
+parameters:
+  - name: "directory"
+    type: "[`dirent/DIR`] *"
+    description: "A pointer to the DIR object of the stream whose stream pointer location will be returned."
+description: |
+  This function gets the directory stream pointer location for a given directory stream pointer. The value is intended to be used
+  with the location parameter of [`dirent/seekdir`]. Attempting to call [`dirent/readdir`] after calling [`dirent/seekdir`] with a
+  a location retrieved from this function is undefined however, if the stream pointer is rewound via a call to [`dirent/rewinddir`] after
+  this function is called and before the [`dirent/seekdir`] function is called. This is because [`dirent/rewinddir`] will re-index the
+  current directory invalidating any previously known stream locations. No errors are defined.
+associated: []
+os_affinity: ["unix"]

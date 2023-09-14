@@ -1,0 +1,6 @@
+summary: "The maximum length of a d_name field defined in the dirent struct."
+kind: !object
+description: |
+  This macro evaluates to an integer constant that represents the maximum length of a filename
+  returned in the d_name field defined in the [`dirent/dirent`] struct.
+os_affinity: ["unix"]

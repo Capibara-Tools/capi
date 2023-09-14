@@ -1,0 +1,13 @@
+summary: A directory entry representing a file.
+fields:
+  - name: d_ino
+    type: "[`sys/types`]"
+    description: "The file serial number."
+  - name: d_name[]
+    type: "[`sys/types`]"
+    description: "The file name."
+description: |
+  A struct representing a directory entry obtained from the [`dirent/readdir`] function. The length of the d_name parameter
+  is not determined according to the POSIX standard and its length is left up to vendor discretion however the vendor must
+  define the length in [`dirent/NAME_MAX`].
+os_affinity: ["unix"]

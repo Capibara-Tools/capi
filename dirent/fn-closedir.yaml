@@ -1,0 +1,14 @@
+summary: "Closes the stream associated with the referenced directory pointer."
+returns:
+  type: "int"
+  description: "Returns 0 if successful. Otherwise -1 is returned and errno is set on failure."
+parameters:
+  - name: "directory"
+    type: "[`dirent/DIR`] *"
+    description: "A pointer to the DIR object of the stream to close."
+description: |
+  This function closes the stream associated with the directory pointer, `directory`,
+  if successful the function will return 0 and `directory` will no long point to an
+  accessible [`dirent/DIR`] object.
+associated: []
+os_affinity: ["unix"]
