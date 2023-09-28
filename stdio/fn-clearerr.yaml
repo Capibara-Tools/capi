@@ -10,5 +10,6 @@ description: |
   This function clears end of file and error indicators for a given file stream. It shall not 
   change the setting of errno if stream is valid, however depending upon implementation, errno
   may be modified if the stream is invalid.
+examples: []
 associated: []
 os_affinity: ["std"]

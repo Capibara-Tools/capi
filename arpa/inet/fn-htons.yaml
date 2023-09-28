@@ -12,5 +12,6 @@ description: |
   vary depending on the host software and hardware, unlike [`arpa/inet/ntohs`], the htons function is used to ensure
   that a short being provided to the socket functions is Big-endian irrespective of the native
   endianess of the host.
+examples: []
 associated: ["arpa/inet/htonl", "arpa/inet/ntohl", "arpa/inet/ntohs"]
 os_affinity: ["unix"]

@@ -16,5 +16,6 @@ description: |
   The function sets the file cursor to a given position based on the addition of an offset and an offset_origin. The offset_origin
   may be the start of a file given by [`stdio/SEEK_SET`], the current position given by [`stdio/SEEK_CUR`], or the end of a file given by
   [`stdio/SEEK_END`]. The function returns 0 upon success and a non-zero value upon failure.
+examples: []
 associated: []
 os_affinity: ["std"]

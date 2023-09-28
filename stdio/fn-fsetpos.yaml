@@ -15,5 +15,6 @@ description: |
   of type [`stdio/fpos_t`]. This should only be used with [`stdio/fgetpos`].
   The function returns 0 on success or a non-zero value on failure. It will also 
   set errno on failure.
+examples: []
 associated: []
 os_affinity: ["std"]

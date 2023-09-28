@@ -10,5 +10,6 @@ description: |
   This function opens a directory stream for the associated directory whose name is given. The stream pointer 
   is positioned at the first entry. If successful the function will return a pointer to an accessible [`dirent/DIR`] object.
   Otherwise null is returned and errno is set on failure.
+examples: []
 associated: []
 os_affinity: ["unix"]

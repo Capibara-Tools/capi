@@ -10,5 +10,6 @@ description: |
   This function looks up an error number an in internal array of definitions and returns a pointer
   to an associated error message string. The contents of the error strings are dependent upon the
   developing platform and compiler.
+examples: []
 associated: []
 os_affinity: ["std"]

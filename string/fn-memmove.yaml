@@ -20,5 +20,6 @@ description: |
   correctly arrays of chars, but they don't necessarily have to. It copies a given number of
   bytes from a source memory area to a destination memory area. The function will return a 
   pointer to the destination.
+examples: []
 associated: ["string/memcpy"]
 os_affinity: ["std"]

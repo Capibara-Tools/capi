@@ -14,5 +14,6 @@ description: |
   depending on whether an output buffer was supplied. If the function is not successful then the function
   will return [`stdio/NULL`]. Users may wish to check [`stdio/TMP_MAX`] to see how many unique file names
   this function is capable of generating.
+examples: []
 associated: []
 os_affinity: ["std"]

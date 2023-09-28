@@ -11,5 +11,6 @@ description: |
   in scenarios where you need to update a line buffered output stream without printing
   a new line. On success the function will return 0, but an error will return [`stdio/EOF`]. The
   error indicator will also be set.
+examples: []
 associated: []
 os_affinity: ["std"]

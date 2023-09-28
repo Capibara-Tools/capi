@@ -62,5 +62,6 @@ description: |
   indicated in the format string. It should also be populated using [`stdarg/va_start`].
 
   This function returns the total number of characters written, or on failure a negative number.
+examples: []
 associated: ["stdio/snprintf"]
 os_affinity: ["std"]

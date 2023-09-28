@@ -12,5 +12,6 @@ parameters:
 description: |
   The function renames a given file to a new filename specified by, new_filename. The function
   either returns 0 upon success or -1 upon failure. In the event of a failure, errno is also set.
+examples: []
 associated: []
 os_affinity: ["std"]

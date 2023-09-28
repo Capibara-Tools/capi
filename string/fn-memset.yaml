@@ -19,5 +19,6 @@ description: |
   num_of_bytes bytes with a specified character, character, at the beginning of the memory
   block pointed to by the parameter, string. The function will return the pointer to the 
   memory block which was overwritten.
+examples: []
 associated: []
 os_affinity: ["std"]

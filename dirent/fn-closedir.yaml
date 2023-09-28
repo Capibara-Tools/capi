@@ -10,5 +10,6 @@ description: |
   This function closes the stream associated with the directory pointer, `directory`,
   if successful the function will return 0 and `directory` will no long point to an
   accessible [`dirent/DIR`] object.
+examples: []
 associated: []
 os_affinity: ["unix"]

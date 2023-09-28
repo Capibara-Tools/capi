@@ -21,5 +21,6 @@ description: |
   array. When the source length is less than the specified num_of_chars, the leftover
   difference will be filled with null bytes. It also returns a pointer to the
   destination string.
+examples: []
 associated: ["string/strcpy"]
 os_affinity: ["std"]

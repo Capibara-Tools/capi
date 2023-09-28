@@ -10,5 +10,6 @@ description: |
   This function writes a string to [`stdio/stdout`]. It also advance the file stream
   position indicator. On success, the function will return a non-negative value. On
   failure, [`stdio/EOF`] is returned.
+examples: []
 associated: []
 os_affinity: ["std"]

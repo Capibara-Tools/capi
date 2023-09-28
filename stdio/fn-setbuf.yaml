@@ -18,5 +18,6 @@ description: |
   buffer size of 0.
 
   For more options use [`stdio/setvbuf`].
+examples: []
 associated: []
 os_affinity: ["std"]

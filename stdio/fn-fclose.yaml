@@ -9,5 +9,6 @@ parameters:
 description: |
   This function closes a given file stream after flushing its associated buffer. On
   success the function will return 0, but an error will return [`stdio/EOF`].
+examples: []
 associated: []
 os_affinity: ["std"]

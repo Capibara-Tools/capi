@@ -16,5 +16,6 @@ description: |
   This function compares the bytes from string_1 against those from string_2. The function will 
   return an integer less than, greater than, or equal to 0 respective to the possible states 
   where string_1 is less than, greater than, or equal to string_2.
+examples: []
 associated: ["string/strncmp"]
 os_affinity: ["std"]

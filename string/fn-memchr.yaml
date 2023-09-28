@@ -16,5 +16,6 @@ description: |
   This function searches for the first instance of a specified character in the first num_of_bytes bytes found in
   the location pointed to by the string pointer. If the function finds the specified character it will return
   a pointer to the matching byte. If not, it will return NULL.
+examples: []
 associated: []
 os_affinity: ["std"]

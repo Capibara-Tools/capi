@@ -16,5 +16,6 @@ description: |
   is designed to operate exclusively on strings and as such it will terminate on the
   null character. This function copies the characters from a non-overlapping source
   string into the destination array. It also returns a pointer to the destination string.
+examples: []
 associated: ["string/strncpy"]
 os_affinity: ["std"]

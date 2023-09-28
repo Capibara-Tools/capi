@@ -9,5 +9,6 @@ parameters:
 description: |
   This function prints a custom string followed by the descriptive error message associated
   with the error indicator to [`stdio/stderr`]. The functions returns nothing.
+examples: []
 associated: []
 os_affinity: ["std"]

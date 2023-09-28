@@ -15,5 +15,18 @@ description: |
   - if the given integer is 1, then 1 will be returned.
 
   This function returns the absolute value of the input.
+examples: 
+  - title: Take absolute value of -3
+    code: |
+      #include <stdio.h>
+      #include <stdlib.h>
+
+      int main(int argc, char ** argv){
+        int x = -3;
+        int result = abs(x);
+
+        //This prints 'The absolute value of -3 is 3.'
+        [`stdio/printf`]("The absolute value of %d is %d", x, result);
+      }
 associated: []
 os_affinity: ["std"]

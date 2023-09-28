@@ -13,5 +13,6 @@ description: |
   
   Note: If the program calls [`unistd/fork`] then the child or parent process may continue interacting
   with the directory but not both.
+examples: []
 associated: []
 os_affinity: ["unix"]

@@ -9,5 +9,6 @@ parameters:
 description: |
   This function checks a given file stream for the error indicator. If the indicator is
   set then the function will return non-zero otherwise it will return 0.
+examples: []
 associated: []
 os_affinity: ["std"]

@@ -19,5 +19,6 @@ description: |
   or character count rather than a character count exclusively. This function concatenates
   the first num_of_chars characters from a non-overlapping source string onto the end of the 
   destination string. It also returns a pointer to the destination string.
+examples: []
 associated: ["string/strcat"]
 os_affinity: ["std"]

@@ -15,5 +15,6 @@ description: |
   to by the parameter, string, for the first character in the input string that is
   shared in common with the array of accepted characters, accepted_chars. If it finds
   a match it returns a pointer to the first matched character. Otherwise it returns NULL.
+examples: []
 associated: []
 os_affinity: ["std"]

@@ -16,5 +16,6 @@ description: |
   designed to operate exclusively on strings and as such it will terminate on the null
   character. This function concatenates a non-overlapping source string onto the end
   of the destination string. It also returns a pointer to the destination string.
+examples: []
 associated: ["string/strncat"]
 os_affinity: ["std"]

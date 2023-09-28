@@ -15,5 +15,6 @@ description: |
   the beginning of the input string up to but not including the first character
   that is not shared in common with the acceptance array. The resulting length
   is returned.
+examples: []
 associated: ["string/strcspn"]
 os_affinity: ["std"]

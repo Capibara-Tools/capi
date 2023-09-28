@@ -13,5 +13,6 @@ description: |
   This function writes the unsigned char to a given stream. It will also advance the file stream
   position indicator. The function will return the supplied character on success or [`stdio/EOF`]
   on failure. On failure, the error indicator is also set.
+examples: []
 associated: []
 os_affinity: ["std"]

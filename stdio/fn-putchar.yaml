@@ -11,5 +11,6 @@ description: |
   position indicator. The function will return the supplied character on success or [`stdio/EOF`]
   on failure. On failure, the error indicator is also set. Basically the same as [`stdio/putc`]
   with [`stdio/stdout`] as an argument.
+examples: []
 associated: []
 os_affinity: ["std"]

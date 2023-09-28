@@ -23,5 +23,6 @@ description: |
   one wishes to read. If element_size or number_of_elements is set to 0 then the function
   returns 0 and the array and stream remain untouched. The position in the file will be incremented
   by the number of bytes read.
+examples: []
 associated: []
 os_affinity: ["std"]

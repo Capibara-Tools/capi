@@ -19,5 +19,6 @@ description: |
   number of bytes from two memory blocks. The function will return an integer less than,
   greater than, or equal to 0 respective to the possible states where string_1 is less than,
   greater than, or equal to string_2.
+examples: []
 associated: []
 os_affinity: ["std"]
