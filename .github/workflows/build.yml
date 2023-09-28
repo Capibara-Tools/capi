@@ -46,8 +46,8 @@ jobs:
           cd ../capibara-processor
           cat capibara.json
 
-      - if: ${{ github.event_name == 'push' }}
-        name: Publish to capibara.tools
+      #- if: ${{ github.event_name == 'push' }}
+      - name: Publish to capibara.tools
         env: 
           CAPIBARA_WEBSITE_SSH_KEY: ${{ secrets.CAPIBARA_TOOLS_USER_SSH_KEY }}
           CAPIBARA_DOCUMENT_REFRESH_TOKEN: ${{ secrets.CAPIBARA_DOCUMENT_REFRESH_TOKEN }}
