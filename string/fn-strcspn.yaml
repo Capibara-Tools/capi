@@ -14,5 +14,6 @@ description: |
   such it will terminate on the null character. This function finds the length from
   the beginning of the input string up to but not including the first character
   that is shared in common with the rejection array. The resulting length is returned.
+examples: []
 associated: ["string/strspn"]
 os_affinity: ["std"]

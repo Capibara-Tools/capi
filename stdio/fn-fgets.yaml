@@ -17,5 +17,6 @@ description: |
   position indicator. It will either read up to (buffer_size-1) number of characters
   or until it encounters a newline or [`stdio/EOF`]. On success, the function will return
   a pointer to the output_buffer. On failure, a null pointer is returned.
+examples: []
 associated: []
 os_affinity: ["std"]

@@ -16,5 +16,6 @@ description: |
   the locale specified in the LC_COLLATE setting. The function will return an integer less
   than, greater than, or equal to 0 respective to the possible states where string_1 is less
   than, greater than, or equal to string_2.
+examples: []
 associated: []
 os_affinity: ["std"]

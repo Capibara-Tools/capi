@@ -57,5 +57,6 @@ description: |
   be passed to match a '%c'.
 
   This function returns the total number of characters written, or on failure a negative number.
+examples: []
 associated: []
 os_affinity: ["std"]

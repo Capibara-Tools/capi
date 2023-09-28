@@ -14,5 +14,6 @@ description: |
   position indicator. This means that that next character to be read from the given stream will be
   the supplied character. The function will return the supplied character on success or [`stdio/EOF`]
   on failure.
+examples: []
 associated: []
 os_affinity: ["std"]

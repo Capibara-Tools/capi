@@ -20,5 +20,6 @@ description: |
   - 'a+' opens a file for reading or appending. The file will be created if it doesn't exist.
   Users may also append a 'b' character to indicate they wish to open the file in a binary mode. This function
   returns a file pointer on success otherwise [`stdio/NULL`] is returned and the global errno is set.
+examples: []
 associated: []
 os_affinity: ["std"]

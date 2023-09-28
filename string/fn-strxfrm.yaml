@@ -20,5 +20,6 @@ description: |
   destination array. The function returns the size of the transformed string up to
   but not including the null-terminating character. NOTE: If the max_num_of_chars is 0,
   the pointer to the buffer, destination, can be null.
+examples: []
 associated: []
 os_affinity: ["std"]

@@ -12,5 +12,6 @@ description: |
   vary depending on the host software and hardware, the htonl function is used to ensure
   that a long being provided to the socket functions is Big-endian irrespective of the native
   endianess of the host.
+examples: []
 associated: ["arpa/inet/htons", "arpa/inet/ntohl", "arpa/inet/ntohs"]
 os_affinity: ["unix"]

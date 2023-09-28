@@ -8,5 +8,6 @@ description: |
   position indicator. In order to return potential error values the result is cast to an int and the
   return result will either be the integer representation of the unsigned char on success or [`stdio/EOF`]
   on failure. Basically the same as [`stdio/getc`] with [`stdio/stdin`] as an argument.
+examples: []
 associated: []
 os_affinity: ["std"]

@@ -9,5 +9,6 @@ parameters:
 description: |
   This function is used to find the length of strings. It returns the length of the string up to,
   but not including the null terminating character.
+examples: []
 associated: []
 os_affinity: ["std"]

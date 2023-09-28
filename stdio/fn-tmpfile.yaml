@@ -8,5 +8,6 @@ description: |
   Upon program termination or stream closure the file will automatically be cleaned up. If successful,
   the function returns a pointer to stream associated with the new temporary file. Otherwise this
   function will return [`stdio/NULL`].
+examples: []
 associated: []
 os_affinity: ["std"]

@@ -15,5 +15,6 @@ description: |
   is undefined however, if the stream pointer is rewound via a call to [`dirent/rewinddir`] as this function will re-index the
   directory invalidating any previously known stream locations. Likewise passing in an arbitrary value not obtained from telldir
   will also cause undefined behavior. No errors are defined.
+examples: []
 associated: []
 os_affinity: ["unix"]

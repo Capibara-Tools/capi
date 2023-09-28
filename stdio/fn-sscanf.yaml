@@ -43,5 +43,6 @@ description: |
   character buffer pointer should be passed to match a '%c'.
 
   This function returns the total number items parsed, or on failure a negative number.
+examples: []
 associated: []
 os_affinity: ["std"]

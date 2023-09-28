@@ -10,5 +10,6 @@ description: |
   This function retrieves the current position in bytes of the file cursor.
   It will returns the position on success or -1 on failure. It will also 
   set errno on failure.
+examples: []
 associated: []
 os_affinity: ["std"]

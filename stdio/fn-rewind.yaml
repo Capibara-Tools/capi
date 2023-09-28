@@ -9,5 +9,6 @@ parameters:
 description: |
   This function sets the current file position of a given stream and 
   based to the beginning of the file. It returns nothing.
+examples: []
 associated: []
 os_affinity: ["std"]

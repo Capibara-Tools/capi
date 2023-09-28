@@ -17,5 +17,6 @@ description: |
   directory in question.
 
   NOTE: This function uses static memory and as such the returned pointer should not be freed.
+examples: []
 associated: []
 os_affinity: ["unix"]

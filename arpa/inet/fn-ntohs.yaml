@@ -12,5 +12,6 @@ description: |
   vary depending on the host software and hardware, the ntohs function is used to ensure
   that shorts in network byte order can have their value represented natively irrespective 
   of the native endianess of the host.
+examples: []
 associated: ["arpa/inet/htonl", "arpa/inet/htons", "arpa/inet/ntohl"]
 os_affinity: ["unix"]

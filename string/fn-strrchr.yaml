@@ -16,5 +16,6 @@ description: |
   to by the parameter, string, for the last instance of the character, character.
   It will return a pointer to the last instance of the specified character if there
   is one. If not, it will return NULL.
+examples: []
 associated: ["string/strchr"]
 os_affinity: ["std"]

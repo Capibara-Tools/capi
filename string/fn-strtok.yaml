@@ -18,5 +18,6 @@ description: |
   of the last input string in static memory, however it is as a result not threadsafe. The
   function returns a pointer to one token for each call. The initial input string has
   been exhausted when the function returns NULL.
+examples: []
 associated: []
 os_affinity: ["std"]

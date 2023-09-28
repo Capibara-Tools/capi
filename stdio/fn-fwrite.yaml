@@ -21,5 +21,6 @@ description: |
   disagrees with number_of_elements specified than an error has occurred. If element_size is set
   to 1, then number_of_elements is simply the number of bytes one wishes to write. The position in
   the file will be incremented by the number of bytes written.
+examples: []
 associated: []
 os_affinity: ["std"]

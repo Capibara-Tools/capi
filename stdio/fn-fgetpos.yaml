@@ -14,5 +14,6 @@ description: |
   writes it to the location given by output_position pointer. The output object is
   of type [`stdio/fpos_t`]. This should only be used with [`stdio/fsetpos`]. The function
   returns 0 on success or a non-zero value on failure.
+examples: []
 associated: []
 os_affinity: ["std"]

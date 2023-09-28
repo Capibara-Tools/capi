@@ -15,5 +15,6 @@ description: |
   of the entire substring pointed to by needle in the larger string pointed to by, haystack.
   The search does not compare null-terminating characters. The functions returns a pointer to
   the first matched instance or NULL if the substring is not matched.
+examples: []
 associated: []
 os_affinity: ["std"]

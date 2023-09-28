@@ -6,6 +6,7 @@ kind: !function
   parameters:
     - name: expression
       description: "Any expression that reduces to an integer sentinel value of TRUE, not 0, or FALSE, 0."
+  examples: []
 description: |
   If the expression evaluates to TRUE, the macro does nothing. If it evaluates to false, it writes an error
   stderr and the program dies. Typically used to diagnose or test various pieces of code.

@@ -26,5 +26,6 @@ description: |
   the buffer is empty up until the next newline character. No buffering ignores the buffer and size parameters, because
   no buffer is used. No-buffered I/O operations are written as soon as possible. This function returns a 0 on 
   success or a non-zero value upon failure.
+examples: []
 associated: []
 os_affinity: ["std"]
