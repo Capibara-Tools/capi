@@ -26,7 +26,7 @@ examples:
         int result = abs(x);
 
         //This prints 'The absolute value of -3 is 3.'
-        [`stdio/printf`]("The absolute value of %d is %d", x, result);
+        printf("The absolute value of %d is %d", x, result);
       }
 associated: []
 os_affinity: ["std"]
