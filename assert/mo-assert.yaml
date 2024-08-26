@@ -7,7 +7,7 @@ kind: !function
     - name: expression
       description: "Any expression that reduces to an integer sentinel value of TRUE, not 0, or FALSE, 0."
   examples: 
-    - title: Assert that the program was started woth at least two arguments
+    - title: Assert that the program was started with at least two arguments
       code: |
         #include <stdio.h>
         #include <assert.h>
