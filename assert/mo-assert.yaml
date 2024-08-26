@@ -6,7 +6,20 @@ kind: !function
   parameters:
     - name: expression
       description: "Any expression that reduces to an integer sentinel value of TRUE, not 0, or FALSE, 0."
-  examples: []
+  examples: 
+    - title: Assert that the program was started woth at least two arguments
+      code: |
+        #include <stdio.h>
+        #include <assert.h>
+  
+        int main(int argc, char ** argv){
+
+          //Our program takes at least two arguments after the program name.
+          assert(argc>2);
+  
+          //If we get this far, the assertion was true and the program did not abort.
+          printf("The is program was called as: %s %s %s", argv[0], argv[1], argv[2]);
+        }
 description: |
   If the expression evaluates to TRUE, the macro does nothing. If it evaluates to false, it writes an error
   stderr and the program dies. Typically used to diagnose or test various pieces of code.
