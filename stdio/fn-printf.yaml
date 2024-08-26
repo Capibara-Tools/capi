@@ -57,6 +57,37 @@ description: |
   be passed to match a '%c'.
 
   This function returns the total number of characters written, or on failure a negative number.
-examples: []
+examples: 
+  - title: Print "Hello World!"
+    code: |
+      #include <stdio.h>
+    
+      int main(int argc, char ** argv){
+        printf("Hello World!");
+      }
+  - title: Print "Hello, {name}!"
+    code: |
+      #include <stdio.h>
+
+      char[] name = "Jim";
+
+      int main(int argc, char ** argv){
+        printf("Hello, %s!", name);
+      }
+  - title: Print newlines and a cool title bar
+    code: |
+      #include <stdio.h>
+
+      //The character for a newline is '\n'.
+      int main(int argc, char ** argv){
+        printf("-------------------------\n");
+        printf("  Really Cool Title Bar  \n")
+        printf("-------------------------\n");
+      }
+
+      //Prints:
+      //-------------------------
+      //  Really Cool Title Bar  
+      //-------------------------
 associated: []
 os_affinity: ["std"]
